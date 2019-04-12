@@ -362,3 +362,30 @@ $string['suspendeduser_fullmessagehtml'] = '
 <p>Please review user profile <a href="{$a->profileurl}">{$a->profileurl}</a></p>';
 $string['suspendeduser_smallmessage'] = 'A user account has been suspended. Please review user profile {$a->profileurl}';
 $string['browseuserprofile'] = 'Browse user profile';
+
+// Privacy.
+$string['privacy:metadata:enrol_arlo_contact'] = 'Contact';
+$string['privacy:metadata:userid'] = 'User ID.';
+$string['privacy:metadata:firstname'] = 'First name.';
+$string['privacy:metadata:lastname'] = 'Last Name.';
+$string['privacy:metadata:email'] = 'Email.';
+$string['privacy:metadata:phonework'] = 'Phone.';
+$string['privacy:metadata:phonemobile'] = 'Mobile.';
+
+$string['privacy:metadata:enrol_arlo_emailqueue'] = 'Queue';
+$string['privacy:metadata:area'] = 'Area.';
+$string['privacy:metadata:type'] = 'Type.';
+$string['privacy:metadata:status'] = 'Status.';
+$string['privacy:metadata:extra'] = 'Extra.';
+
+$string['privacy:metadata:enrol_arlo_registration'] = 'Registration';
+$string['privacy:metadata:attendance'] = 'Attendance.';
+$string['privacy:metadata:grade'] = 'Grade.';
+$string['privacy:metadata:outcome'] = 'Outcome.';
+$string['privacy:metadata:lastactivity'] = 'Last activity.';
+$string['privacy:metadata:progressstatus'] = 'Status.';
+$string['privacy:metadata:progresspercent'] = 'Percent.';
+$string['privacy:metadata:sourcestatus'] = 'Source.';
+
+$string['privacy:metadata:mydata'] = 'my_data';
+
