@@ -219,17 +219,17 @@ class provider implements
 
         $params = ['contextid' => $context->id, 'contextlevel' => CONTEXT_USER];
 
-        $sql1 = "SELECT c.id
+        $sql1 = "SELECT eac.userid
                   FROM {enrol_arlo_contact} eac
                   JOIN {context} c ON c.contextlevel = :contextlevel AND c.instanceid = eac.userid
                  WHERE c.id = :contextid";
 
-        $sql2 = "SELECT c.id
+        $sql2 = "SELECT eae.userid
                   FROM {enrol_arlo_emailqueue} eae
                   JOIN {context} c ON c.contextlevel = :contextlevel AND c.instanceid = eae.userid
                  WHERE c.id = :contextid";
 
-        $sql3 = "SELECT c.id
+        $sql3 = "SELECT ear.userid
                   FROM {enrol_arlo_registration} ear
                   JOIN {context} c ON c.contextlevel = :contextlevel AND c.instanceid = ear.userid
                  WHERE c.id = :contextid";
