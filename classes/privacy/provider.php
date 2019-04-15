@@ -31,6 +31,7 @@ use core_privacy\local\request\approved_userlist;
 use core_privacy\local\request\context;
 use core_privacy\local\request\contextlist;
 use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -91,7 +92,6 @@ class provider implements
 
         $subcontext = [
             get_string('pluginname', 'enrol_arlo'),
-            get_string('privacy:metadata:mydata', 'enrol_arlo')
         ];
 
         $sql1 = "SELECT *

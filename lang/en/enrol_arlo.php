@@ -386,6 +386,3 @@ $string['privacy:metadata:lastactivity'] = 'Last activity.';
 $string['privacy:metadata:progressstatus'] = 'Status.';
 $string['privacy:metadata:progresspercent'] = 'Percent.';
 $string['privacy:metadata:sourcestatus'] = 'Source.';
-
-$string['privacy:metadata:mydata'] = 'my_data';
-
