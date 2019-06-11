@@ -241,3 +241,117 @@ You can reset your password using following url:
 You may access this course at the following url:
 
   {$a->courseurl}';
+
+$string['httpstatus:200'] = 'OK';
+$string['httpstatus:201'] = 'Created';
+$string['httpstatus:302'] = 'Found';
+$string['httpstatus:400'] = 'Bad Request';
+$string['httpstatus:401'] = 'Unauthorized';
+$string['httpstatus:403'] = 'Forbidden';
+$string['httpstatus:404'] = 'Not Found';
+$string['httpstatus:406'] = 'Unacceptable';
+$string['httpstatus:409'] = 'Conflict';
+$string['httpstatus:415'] = 'Unsupported Media Type';
+$string['httpstatus:500'] = 'Internal Server Error';
+$string['httpstatus:503'] = 'Service Unavailable';
+$string['cleanup'] = 'Clean up';
+$string['requestlogcleanup'] = 'Request log clean up';
+$string['requestlogcleanup_help'] = 'Remove request log entries that are older than the selected time.';
+$string['outcomepushingdisabled'] = 'Outcome pushing is disabled at site configuration.';
+$string['eventresultpushingdisabled'] = 'Event result pushing disabled at site configuration.';
+$string['onlineactivityresultpushingdisabled'] = 'Online activity result pushing disabled at site configuration.';
+$string['nomatchingenrolmentinstance'] = 'No matching enrolment instance.';
+$string['enrolmentinstancedisabled'] = 'Enrolment instance disabled.';
+$string['allowhiddencoursesdiabled'] = 'Allow hidden courses is disabled at site configuration.';
+$string['contactresourcemissing'] = 'Contact resource missing from Registration.';
+$string['contactrecordmissing'] = 'Contact record missing.';
+$string['noassociateduser'] = 'No associated Moodle user account.';
+$string['unsuccessfulenrolment'] = 'Unsuccessful enrolment';
+$string['unsuccessfulenrolments'] = 'Unsuccessful enrolments';
+$string['unsuccessfulenrolmentscount'] = 'Unsuccessful enrolments: {$a}';
+$string['unsuccessfulenrolmentof'] = 'Unsuccessful enrolment of {$a->fullname} into {$a->code}';
+$string['report'] = 'Report';
+$string['viewreport'] = 'View report';
+$string['sourcecontact'] = 'Source contact';
+$string['destinationcontact'] = 'Destination contact';
+$string['browseassociateduser'] = 'Browse associated user account';
+$string['returntounsucessfulenrolments'] = 'Return to unsucessful enrolments';
+
+$string['unsuccessfulenrolment_subject'] = 'Unsuccessful enrolment of Arlo contact';
+$string['unsuccessfulenrolment_fullmessage'] = '
+Unsuccessful enrolment of Arlo contact, this may be due to duplicate matching Moodle user accounts or Moodle account could not be created due to site configuration settings.
+
+Please check report {$a->report} for more information.';
+$string['unsuccessfulenrolment_fullmessagehtml'] = '
+<p>Unsuccessful enrolment of Arlo contact, this may be due to duplicate matching Moodle user accounts or Moodle account could not be created due to site configuration settings.</p>
+<br>
+<p>Please check report <a href="{$a->report}">{$a->report}</a> for more information.</p>';
+$string['unsuccessfulenrolment_smallmessage'] = 'Unsuccessful enrolment of Arlo contact, please check report {$a->report}';
+$string['invalidcredentials_subject'] = 'Moodle cannot connect to Arlo API';
+$string['invalidcredentials_smallmessage'] = 'Moodle cannot connect to Arlo API. Please check connection settings: {$a->url}';
+$string['invalidcredentials_fullmessage'] = '
+Moodle cannot connect to Arlo API
+
+There is something wrong with your connection settings. Please check that the api username and api password are correct.
+Moodle Arlo connection settings: {$a->url}
+';
+$string['invalidcredentials_fullmessagehtml'] = '
+<h3>Moodle cannot connect to Arlo API</h3>
+<br>
+<p>There is something wrong with your connection settings. Please check that the api username and api password are correct.</p>
+<p>Moodle Arlo connection settings: <a href="{$a->url}">{$a->url}</a></p>';
+$string['morethanonematch'] = 'More than one match found';
+$string['moodleusern'] = 'Moodle user {$a}';
+$string['outcomespushingdisabled'] = 'Outcomes pushing is disabled';
+$string['accessed'] = 'Accessed';
+$string['unenrolfromarlocourses'] = 'Unenrol from Arlo linked courses';
+$string['contactrecordinformation'] = 'Contact record information';
+$string['userrecordinformation'] = 'User record information';
+$string['sourcecontact'] = 'Source contact';
+$string['destinationcontact'] = 'Destination contact';
+$string['unenrolcontact'] = 'Unenrol contact';
+$string['removeallarloenrolmentsquestion'] = 'Are you sure you want to remove all Arlo linked enrolments for {$a}?';
+$string['enrolmentwillbeattemptedagain'] = 'The enrolment with be attempted again via the standard scheduled task. You can also try to resolve via a manual syncronisation.';
+$string['morethanonemoodleuserfound'] = 'More than one Moodle user found with same details';
+$string['suspendeduser_subject'] = 'Plugin has suspended a user account';
+$string['suspendeduser_fullmessage'] = '
+Arlo enrolment plugin has suspended a user account while resolving a contact merge request.
+
+The user account did not have any courses enrolments and was linked to an Arlo contact.
+
+Please review user profile {$a->profileurl}';
+$string['suspendeduser_fullmessagehtml'] = '
+<p>Arlo enrolment plugin has suspended a user account while resolving a contact merge request.</p>
+<br>
+<p>The user account did not have any courses enrolments and was linked to an Arlo contact.</p>
+<br>
+<p>Please review user profile <a href="{$a->profileurl}">{$a->profileurl}</a></p>';
+$string['suspendeduser_smallmessage'] = 'A user account has been suspended. Please review user profile {$a->profileurl}';
+$string['browseuserprofile'] = 'Browse user profile';
+
+// Privacy.
+$string['privacy:metadata:enrol_arlo_contact'] = 'Contact';
+$string['privacy:metadata:userid'] = 'User ID.';
+$string['privacy:metadata:firstname'] = 'First name.';
+$string['privacy:metadata:lastname'] = 'Last Name.';
+$string['privacy:metadata:email'] = 'Email.';
+$string['privacy:metadata:phonework'] = 'Phone.';
+$string['privacy:metadata:phonemobile'] = 'Mobile.';
+
+$string['privacy:metadata:enrol_arlo_emailqueue'] = 'Queue';
+$string['privacy:metadata:area'] = 'Area.';
+$string['privacy:metadata:type'] = 'Type.';
+$string['privacy:metadata:status'] = 'Status.';
+$string['privacy:metadata:extra'] = 'Extra.';
+
+$string['privacy:metadata:enrol_arlo_registration'] = 'Registration';
+$string['privacy:metadata:attendance'] = 'Attendance.';
+$string['privacy:metadata:grade'] = 'Grade.';
+$string['privacy:metadata:outcome'] = 'Outcome.';
+$string['privacy:metadata:lastactivity'] = 'Last activity.';
+$string['privacy:metadata:progressstatus'] = 'Status.';
+$string['privacy:metadata:progresspercent'] = 'Percent.';
+$string['privacy:metadata:sourcestatus'] = 'Source.';
+
+$string['privacy:metadata:mydata'] = 'my_data';
+
