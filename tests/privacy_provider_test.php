@@ -36,6 +36,7 @@ class enrol_arlo_privacy_provider_testcase extends \core_privacy\tests\provider_
     public function setUp() {
         global $CFG;
         require_once($CFG->dirroot . '/enrol/arlo/lib.php');
+        $CFG->forced_plugin_settings['enrol_arlo']['allowportalintegration'] = false;
 
         if (!class_exists('core_privacy\manager')) {
             $this->markTestSkipped('Moodle version does not support privacy subsystem.');
